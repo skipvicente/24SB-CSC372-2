@@ -4,16 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f56d8edf-a7eb-4034-872c-7115236794d3" name="Changes" comment="Import from laptop note errors still need correction. 5/7/2024&#10;5:30">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Module_02_Vince.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Module_02_Vince.java" afterDir="false" />
-    </list>
+    <list default="true" id="f56d8edf-a7eb-4034-872c-7115236794d3" name="Changes" comment="Update 5/5/2024 @ 5:44PM" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="master" />
@@ -24,6 +22,9 @@
   <component name="GitHubPullRequestSearchHistory"><![CDATA[{
   "lastFilter": {}
 }]]></component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="92bf5964-c884-475b-b23a-015fc6b3d72c" />
+  </component>
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
     "url": "https://github.com/skipvicente/24SB-CSC372-2.git",
@@ -71,7 +72,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1715119104700</updated>
-      <workItem from="1715119105779" duration="2704000" />
+      <workItem from="1715119105779" duration="3780000" />
     </task>
     <task id="LOCAL-00001" summary="Import from laptop note errors still need correction. 5/7/2024">
       <option name="closed" value="true" />
@@ -97,7 +98,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715121328687</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Update 5/5/2024 @ 5:44PM">
+      <option name="closed" value="true" />
+      <created>1715121886014</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1715121886014</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,6 +138,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Import from laptop note errors still need correction. 5/7/2024" />
     <MESSAGE value="Import from laptop note errors still need correction. 5/7/2024&#10;5:30" />
-    <option name="LAST_COMMIT_MESSAGE" value="Import from laptop note errors still need correction. 5/7/2024&#10;5:30" />
+    <MESSAGE value="Update 5/5/2024 @ 5:44PM" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update 5/5/2024 @ 5:44PM" />
   </component>
 </project>

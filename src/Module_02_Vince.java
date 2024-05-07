@@ -17,7 +17,7 @@ public class Module_02_Vince {
     // Define Menu Items
     JMenuItem menuItem1 = new JMenuItem("Print Date/Time");
     JMenuItem menuItem2 = new JMenuItem("Write to File");
-    JMenuItem menuItem3 = new JMenuItem("Change Background  ");
+    JMenuItem menuItem3 = new JMenuItem("Change Background Color  ");
 
     JMenuItem menuItem4 = new JMenuItem("   Exit");
     //menuItem4.setMargin(new Insets(10,10,10, 10));
