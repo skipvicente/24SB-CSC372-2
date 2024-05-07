@@ -7,7 +7,7 @@ import java.time.LocalDateTime; //to pull system time
 public class Module_02_Vince {
     public static void main(String[] args) {
 
-    JFrame myFrame = new JFrame("My Test Sample Frame UI");
+    JFrame myFrame = new JFrame("Module 02 Sample Frame UI");
         myFrame.setSize(800,600);
 
     //  Define Menu
@@ -15,24 +15,28 @@ public class Module_02_Vince {
         myFrame.setJMenuBar(menuBar);
 
     // Define Menu Items
-    JMenuItem menuItem1 = new JMenuItem("Print Date/Time");
+    JMenuItem menuItem1 = new JMenuItem("Display Date/Time");
     JMenuItem menuItem2 = new JMenuItem("Write to File");
-    JMenuItem menuItem3 = new JMenuItem("Change Background Color  ");
+    JMenuItem menuItem3 = new JMenuItem("Background Color  ");
 
-    JMenuItem menuItem4 = new JMenuItem("   Exit");
-    //menuItem4.setMargin(new Insets(10,10,10, 10));
+    JMenuItem menuItem4 = new JMenuItem("  Exit");
+    //JMenuItem menuItem4 = new JMenuItem("<html><table width='100%'><tr><td align='center'>EXIT</td></tr></table></html>");
+    //menuItem4.setMargin(new Insets(10,100,0, 0));
+        // /*First Integer is number of pixels from the top, the second is from the left, the third is from the bottom, and the fourth from the right*/
 
     // Add Menu Items to Menu
         menuBar.add(menuItem1);
+        menuItem1.add(new JSeparator());
         menuBar.add(menuItem2);
+        menuItem2.add(new JSeparator());
         menuBar.add(menuItem3);
-        //menuBar.add(new JMenu("|"));
-        //menuBar.add(new JSeparator());
+        menuItem3.add(new JSeparator());
         //menuBar.add( Box.createHorizontalStrut( 30 ) );
         //menuBar.addSeparator();
         menuBar.add(menuItem4);
+        menuItem4.add(new JSeparator());
 
-    JTextArea textArea = new JTextArea("", 10, 1);
+    JTextArea textArea = new JTextArea("", 20, 1);
         myFrame.add(textArea, BorderLayout.CENTER);
 
     // Menu Items Actions
@@ -60,6 +64,6 @@ public class Module_02_Vince {
 
         myFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         myFrame.pack();
-       myFrame.setVisible(true);
+        myFrame.setVisible(true);
 }
 }
