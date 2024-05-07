@@ -10,19 +10,17 @@ public class Module_02_Vince {
     JFrame myFrame = new JFrame("Module 02 Sample Frame UI");
         myFrame.setSize(800,600);
 
-    //  Define Menu
+    //  Defined Menu
     JMenuBar menuBar = new JMenuBar();
         myFrame.setJMenuBar(menuBar);
 
-    // Define Menu Items
+    // Defined Menu Items
     JMenuItem menuItem1 = new JMenuItem("Display Date/Time");
     JMenuItem menuItem2 = new JMenuItem("Write to File");
     JMenuItem menuItem3 = new JMenuItem("Background Color  ");
 
     JMenuItem menuItem4 = new JMenuItem("  Exit");
-    //JMenuItem menuItem4 = new JMenuItem("<html><table width='100%'><tr><td align='center'>EXIT</td></tr></table></html>");
-    //menuItem4.setMargin(new Insets(10,100,0, 0));
-        // /*First Integer is number of pixels from the top, the second is from the left, the third is from the bottom, and the fourth from the right*/
+
 
     // Add Menu Items to Menu
         menuBar.add(menuItem1);
@@ -31,8 +29,6 @@ public class Module_02_Vince {
         menuItem2.add(new JSeparator());
         menuBar.add(menuItem3);
         menuItem3.add(new JSeparator());
-        //menuBar.add( Box.createHorizontalStrut( 30 ) );
-        //menuBar.addSeparator();
         menuBar.add(menuItem4);
         menuItem4.add(new JSeparator());
 
@@ -41,7 +37,6 @@ public class Module_02_Vince {
 
     // Menu Items Actions
         menuItem1.addActionListener(e -> textArea.append(LocalDateTime.now() + "\n"));
-        //menuItem1.addActionListener(e -> textArea.append(LocalDateTime.now().toString() + "\n"));
         menuItem2.addActionListener(e -> {
         try (FileWriter writer = new FileWriter("log.txt")) {
             writer.write(textArea.getText());
