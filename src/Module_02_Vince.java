@@ -1,8 +1,8 @@
 import javax.swing.*;
 import java.awt.*;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.time.LocalDateTime;
+import java.io.FileWriter; //to write to file
+import java.io.IOException; //for exception error
+import java.time.LocalDateTime; //to pull system time
 
 public class Module_02_Vince {
     public static void main(String[] args) {
@@ -36,7 +36,8 @@ public class Module_02_Vince {
         myFrame.add(textArea, BorderLayout.CENTER);
 
     // Menu Items Actions
-        menuItem1.addActionListener(e -> textArea.append(LocalDateTime.now().toString() + "\n"));
+        menuItem1.addActionListener(e -> textArea.append(LocalDateTime.now() + "\n"));
+        //menuItem1.addActionListener(e -> textArea.append(LocalDateTime.now().toString() + "\n"));
         menuItem2.addActionListener(e -> {
         try (FileWriter writer = new FileWriter("log.txt")) {
             writer.write(textArea.getText());
