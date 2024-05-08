@@ -1,7 +1,4 @@
 import javax.swing.*;
-import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.time.LocalDate;
 import java.time.Period; //obtains a quantity or amount of time in terms of years, months and days.
 import java.time.temporal.ChronoUnit; //use to calculate the days
