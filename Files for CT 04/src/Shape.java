@@ -49,3 +49,24 @@ class Cylinder extends Shape { /* We are working with the cylinder shape object 
         return Math.PI * radius * radius * height;
     }
 }
+
+class Cone extends Shape { /* We are working with the cone shape object here */
+    private double radius, height;
+
+    public  Cone (double radius, double height){
+        this.radius = radius;
+        this.height = height;
+    }
+
+    public String toString(){
+        return "This is the surface area of the cone: " + surface_area() + " This is the volume of the cone: " + volume();
+    }
+
+    public  double surface_area(){
+        return Math.PI * radius * (radius + Math.sqrt(height * height + radius * radius));
+    }
+
+    public double volume(){
+        return Math.PI * radius * radius * height / 3.0;
+    }
+}
