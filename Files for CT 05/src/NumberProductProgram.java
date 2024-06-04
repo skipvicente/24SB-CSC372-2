@@ -2,9 +2,7 @@ import java.util.Scanner;
 
 public class NumberProductProgram {
 
-
     public static int calculateUserNumbers(int[] numbers, int index) {
-
         if (index < 0) {
             return 1;
         }
@@ -12,27 +10,22 @@ public class NumberProductProgram {
         return numbers[index] * calculateUserNumbers(numbers, index - 1);
     }
 
-    public class Main {
-        public static void main(String[] args) {
-            Scanner scnr01 = new Scanner(System.in);
+    public static void main(String[] args) {
+        Scanner scnr01 = new Scanner(System.in);
 
-            int[] userNumbers = new int[5]; /* Only using 5 because we only want to permit 5 elements in array */
-            int count = 1;
+        int[] userNumbers = new int[5]; /* Only using 5 because we only want to permit 5 elements in array */
+        int count = 0;
 
-            System.out.println("Enter number " + count + " of 5 " + "\n");
-
-            for (int i = 0; i < 5; i++) {
-                System.out.print("Number " + (i + 1) + ": ");
-                count = count + 1;
-                userNumbers[i] = scnr01.nextInt();
-            }
-
-            int product = calculateUserNumbers(userNumbers, 4);
-
-            System.out.println("The product of your numbers is: " + product);
-
-            scnr01.close();
+        for (count = 0; count < 5; count++) {
+            System.out.println("Enter number " + (count + 1) + " of 5 ");
+            userNumbers[count] = scnr01.nextInt();
 
         }
+
+        int product = calculateUserNumbers(userNumbers, 4);
+
+        System.out.println("The product of your numbers is: " + product);
+
+        scnr01.close();
     }
 }
