@@ -23,6 +23,7 @@ public class NumberProductProgram {
 
             for (int i = 0; i < 5; i++) {
                 System.out.print("Number " + (i + 1) + ": ");
+                count = count + 1;
                 userNumbers[i] = scnr01.nextInt();
             }
 
