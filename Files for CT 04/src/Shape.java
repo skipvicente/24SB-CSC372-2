@@ -3,7 +3,7 @@ public abstract class Shape {
     public abstract double volume();
 }
 
-class Sphere extends Shape {
+class Sphere extends Shape { /* We are working with the sphere oshape object here */
 
     private double radius;
     public Sphere (double radius){
@@ -28,3 +28,24 @@ class Sphere extends Shape {
     }
 }
 
+
+class Cylinder extends Shape { /* We are working with the cylinder shape object here */
+    private double radius, height;
+
+    public Cylinder (double radius, double height) {
+        this.radius = radius;
+        this.height = height;
+    }
+
+    public String toString() {
+        return "This is the surface are aof the cylinder: " + surface_area() + "This is the volume of the cylinder: " + volume();
+    }
+
+    public double surface_area(){
+        return 2.0 * Math.PI * radius * (radius + height);
+    }
+
+    public double volume() {
+        return Math.PI * radius * radius * height;
+    }
+}
