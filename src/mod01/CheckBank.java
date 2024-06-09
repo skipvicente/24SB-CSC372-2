@@ -2,27 +2,25 @@ package mod01;
 
 public class CheckBank extends SuperBank{
     private  String interestRateAttribute;
-    private Double balance;
 
     public CheckBank(String InputInterestRate){
         super();
         this.interestRateAttribute = InputInterestRate + "%" ;
     }
 
-     public void processWithdrawal(double withDrawAmount){
-        double totalAmount = withDrawAmount;
-        if (totalAmount <= getBalance()) {
-            System.out.println("step one total amount: " + totalAmount + "\n");
-            totalAmount = totalAmount - 30;
+    public void processWithdrawal(double withdrawAmount) {
+        if (withdrawAmount <= getBalance()) {
+            //**System.out.println("Step one balance: " + getBalance() + "\n");
+            //**System.out.println("Step one withdraw total amount: " + withdrawAmount + "\n");
+            super.withdraw(withdrawAmount);
+            //**System.out.println("New balance after withdrawal: " + getBalance() + "\n");
+        } else {
+            //**System.out.println("Insufficient funds. Fee assessed.");
+            double totalAmount = getBalance() - (withdrawAmount + 30); // Adding penalty fee
             super.withdraw(totalAmount);
-            //System.out.println("test overdraft fee");
-            System.out.println("new balance!!: " + totalAmount + "\n");
-         }
-
-         else {
-             System.out.println("Insufficient funds");
-         }
-     }
+            //**System.out.println("New balance after overdrawn: " + getBalance() + "\n");
+        }
+    }
 
      public void displayAccount(){
         super.accountSummary();

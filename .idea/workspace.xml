@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47b3d1d9-1e01-47a0-87ed-d92178826066" name="Changes" comment="Update 10:40 pending errors correction">
+    <list default="true" id="47b3d1d9-1e01-47a0-87ed-d92178826066" name="Changes" comment="Update 11:56 pending errors correction">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/mod01/CheckBank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mod01/CheckBank.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/mod01/SuperBank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mod01/SuperBank.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mod01/TestBank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mod01/TestBank.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +55,7 @@
   "keyToString": {
     "Application.TestBank.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "Module__01__CT",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
@@ -86,7 +87,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1717900545253</updated>
-      <workItem from="1717900546329" duration="8200000" />
+      <workItem from="1717900546329" duration="14389000" />
     </task>
     <task id="LOCAL-00001" summary="Module_01_CT--.iml attempt 3 update">
       <option name="closed" value="true" />
@@ -176,7 +177,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717904443783</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Update 11:56 pending errors correction">
+      <option name="closed" value="true" />
+      <created>1717909022487</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1717909022487</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,6 +201,7 @@
     <MESSAGE value="Update 10:06" />
     <MESSAGE value="Update 10:18 pending errors correction" />
     <MESSAGE value="Update 10:40 pending errors correction" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update 10:40 pending errors correction" />
+    <MESSAGE value="Update 11:56 pending errors correction" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update 11:56 pending errors correction" />
   </component>
 </project>

@@ -15,8 +15,8 @@ public class SuperBank {
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
-    public String getFirstName(String firstName) {
-        return firstName;
+    public String getFirstName() {
+        return this.firstName;
     }
 
 
@@ -24,8 +24,8 @@ public class SuperBank {
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
-    public String getLastName(String lastName) {
-        return lastName;
+    public String getLastName() {
+        return this.lastName;
     }
 
 
@@ -34,22 +34,30 @@ public class SuperBank {
         this.accountNumber = accountNumber;
     }
     public Integer getAccountNumber() {
-        return accountNumber;
+        return this.accountNumber;
     }
 
-     public void deposit(double inputAmount){
-        this.balance = this.balance + inputAmount; /* add here */
+     public void deposit(double initialDepositAmount){
+         if (initialDepositAmount > 0) {
+             this.balance += initialDepositAmount;
+         }
+         else {
+             System.out.println("Deposit may not be negative.");
+         }
      }
 
-    public void withdraw(double inputAmount){
-        if (inputAmount <= balance) {
-            balance -= inputAmount;
-        }
-        else {
-            System.out.println("Insufficient funds");
-            //this.balance = this.balance - inputAmount;
-        }
-    }
+     public void withdraw(double inputAmount){
+         double totalAmount = inputAmount;
+         if (totalAmount <= this.balance) {
+             System.out.println("Step one balance: " + this.balance + "\n");
+             this.balance -= totalAmount;
+             System.out.println("Step two balance: " + this.balance + "\n");
+         } else {
+             this.balance = this.balance - (totalAmount + 30); // Penalty for insufficient funds
+             System.out.println("teest from super bank" + this.balance);
+             System.out.println("Insufficient funds. Penalty of $30 applied.");
+         }
+     }
 
     public Double getBalance() {
         return this.balance;
@@ -59,6 +67,6 @@ public class SuperBank {
         System.out.println("First Name: " + this.firstName);
         System.out.println("Last Name: " + this.lastName);
         System.out.println("Account Number: " + this.accountNumber);
-        System.out.println("Account Balance: " + this.balance + "\n");
+        System.out.println("Account Balance: $" + String.format("%.2f", this.balance) + "\n");
     }
 }
