@@ -3,17 +3,18 @@ public abstract class Shape {
     public abstract double volume();
 }
 
-class Sphere extends Shape { /* We are working with the sphere oshape object here */
+class Sphere extends Shape { /* We are working with the sphere shape object here */
 
     private double radius;
     public Sphere (double radius){
+
         this.radius = radius;
     }
 
     public String toString()
     {
-        System.out.println("Test surface area: " + surface_area());
-        System.out.println("Test volume: " + volume());
+        //System.out.println("Test surface area: " + surface_area());
+        //System.out.println("Test volume: " + volume());
         return "The spheres surface area is: " + surface_area() + " The spheres volume is: " + volume();
     }
 
@@ -42,10 +43,12 @@ class Cylinder extends Shape { /* We are working with the cylinder shape object 
     }
 
     public double surface_area(){
+
         return 2.0 * Math.PI * radius * (radius + height);
     }
 
     public double volume() {
+
         return Math.PI * radius * radius * height;
     }
 }
