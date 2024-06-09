@@ -1,4 +1,4 @@
-package BankMod01//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+package BankMod01
 
 class TestBank {
     public static void main(String[] args) {
