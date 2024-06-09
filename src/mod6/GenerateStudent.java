@@ -3,13 +3,13 @@ package mod6;
 public class GenerateStudent {
 
     public String studentNames;
-    public Integer rollerNumber;
+    public Integer rollNumber;
     public String address;
 
     //Student data construct
     public GenerateStudent(String inputStudentName, Integer inputRoll, String addrress){
         this.studentNames = inputStudentName;
-        this.rollerNumber = inputRoll;
+        this.rollNumber = inputRoll;
         this.address = addrress;
     }
 }
