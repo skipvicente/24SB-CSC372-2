@@ -19,6 +19,7 @@ public class CheckBank extends SuperBank{
             double totalAmount = getBalance() - withdrawAmount;
             totalAmount -= 30; // Adding penalty fee
             //super.withdraw(totalAmount);
+            super.withdraw(withdrawAmount);
             //**System.out.println("New balance after overdrawn: " + getBalance() + "\n");
         }
     }
