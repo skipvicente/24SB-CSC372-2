@@ -21,17 +21,16 @@ public class StudentSort {
 
 
         SortingByStudent newRoll = new SortingByStudent(students);
+        System.out.println("Sorted by Student Name:");
         for (GenerateStudent student : newRoll.getNameSorted()) {
             String studentInfo = "Name: " + student.studentNames + ", Roll Number: " + student.rollNumber + ", Address: " + student.address;
             System.out.println(studentInfo);
-            //System.out.println("\n");
         }
 
-
         SortingRolling newRoll2 = new SortingRolling(newRoll.getNameSorted());
-
+        System.out.println("\n" + "Sorted by Roll Number:");
         for (GenerateStudent student : newRoll2.getRollSorted()) {
-            String studentInfo = "Name: " + student.studentNames + ", Roll Number: " + student.rollNumber + ", Address: " + student.address + "\n";
+            String studentInfo = "Name: " + student.studentNames + ", Roll Number: " + student.rollNumber + ", Address: " + student.address;
             System.out.println(studentInfo);
         }
     }

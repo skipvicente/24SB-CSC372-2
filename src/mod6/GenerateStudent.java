@@ -7,9 +7,9 @@ public class GenerateStudent {
     public String address;
 
     //Student data construct
-    public GenerateStudent(String inputStudentName, Integer inputRoll, String addrress) {
+    public GenerateStudent(String inputStudentName, int inputRoll, String address) {
         this.studentNames = inputStudentName;
         this.rollNumber = inputRoll;
-        this.address = addrress;
+        this.address = address;
     }
 }
