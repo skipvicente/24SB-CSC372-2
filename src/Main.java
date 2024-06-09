@@ -1,15 +1,22 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
-    public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+package BankMod01//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+class TestBank {
+    public static void main(String[] args) {
+        System.out.print("default");
+        CheckBank checkBank = new CheckBank("5");
+
+        /* setup accounts and summary */
+        checkBank.setAccountID(1122334);
+        checkBank.setFirstName("Jane");
+        checkBank.setLastName("Doe");
+        checkBank.accountSummary();
+
+        System.out.printf("Test" + setAccountID);
+        System.out.printf("Test" + setFirstName);
+        System.out.printf("Test" + setLastName);
+        System.out.printf("Test" + accountSummary);
+
+
+
     }
 }
