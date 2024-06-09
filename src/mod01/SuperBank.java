@@ -50,12 +50,14 @@ public class SuperBank {
          double totalAmount = inputAmount;
          if (totalAmount <= this.balance) {
              System.out.println("Step one balance: " + this.balance + "\n");
-             this.balance -= totalAmount;
+             this.balance = this.balance - totalAmount;
              System.out.println("Step two balance: " + this.balance + "\n");
-         } else {
-             this.balance = this.balance - (totalAmount + 30); // Penalty for insufficient funds
+         } else
+         {
+             this.balance = this.balance - totalAmount;
+             this.balance = this.balance - 30; // Penalty for insufficient funds
              System.out.println("teest from super bank" + this.balance);
-             System.out.println("Insufficient funds. Penalty of $30 applied.");
+             System.out.println("new Insufficient funds. Penalty of $30 applied.");
          }
      }
 

@@ -16,8 +16,9 @@ public class CheckBank extends SuperBank{
             //**System.out.println("New balance after withdrawal: " + getBalance() + "\n");
         } else {
             //**System.out.println("Insufficient funds. Fee assessed.");
-            double totalAmount = getBalance() - (withdrawAmount + 30); // Adding penalty fee
-            super.withdraw(totalAmount);
+            double totalAmount = getBalance() - withdrawAmount;
+            totalAmount -= 30; // Adding penalty fee
+            //super.withdraw(totalAmount);
             //**System.out.println("New balance after overdrawn: " + getBalance() + "\n");
         }
     }

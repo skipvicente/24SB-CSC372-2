@@ -5,7 +5,7 @@ class TestBank {
     public static void main(String[] args) {
         Scanner scnr = new Scanner(System.in);
         //System.out.println("default");
-        SuperBank superBankAccount = new SuperBank();
+        CheckBank checkBank = new CheckBank("5");
 
         System.out.println("Enter First Name");
         String clientFirstName = scnr.nextLine();
@@ -23,7 +23,6 @@ class TestBank {
         System.out.println("Enter Initial Deposit Amount");
         Double initialDepositAmount = scnr.nextDouble();
 
-        CheckBank checkBank = new CheckBank("5");
         /* test case how to withdraw money */
         checkBank.deposit(initialDepositAmount);
         checkBank.processWithdrawal(25);
