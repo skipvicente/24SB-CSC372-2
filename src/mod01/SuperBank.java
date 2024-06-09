@@ -4,7 +4,7 @@ public class SuperBank {
 
     private String firstName;
     private String lastName;
-    private Integer accountID;
+    private Integer accountNumber;
     private Double balance;
 
     public SuperBank(){
@@ -29,12 +29,12 @@ public class SuperBank {
     }
 
 
-    /* Getter-Setter account ID */
-    public void setAccountID(Integer accountID) {
-        this.accountID = accountID;
+    /* Getter-Setter account number as the ID number */
+    public void setAccountNumber(Integer accountNumber) {
+        this.accountNumber = accountNumber;
     }
-    public Integer getAccountID() {
-        return accountID;
+    public Integer getAccountNumber() {
+        return accountNumber;
     }
 
      public void deposit(double inputAmount){
@@ -42,7 +42,13 @@ public class SuperBank {
      }
 
     public void withdraw(double inputAmount){
-        this.balance = this.balance - inputAmount; /* subtract here */
+        if (inputAmount <= balance) {
+            balance -= inputAmount;
+        }
+        else {
+            System.out.println("Insufficient funds");
+            //this.balance = this.balance - inputAmount;
+        }
     }
 
     public Double getBalance() {
@@ -50,9 +56,9 @@ public class SuperBank {
     }
 
     public void accountSummary(){
-        System.out.printf("Test" + this.firstName);
-        System.out.printf("Test" + this.lastName);
-        System.out.printf("Test" + this.accountID);
-        System.out.printf("Test" + this.balance);
+        System.out.println("First Name: " + this.firstName);
+        System.out.println("Last Name: " + this.lastName);
+        System.out.println("Account Number: " + this.accountNumber);
+        System.out.println("Account Balance: " + this.balance + "\n");
     }
 }
