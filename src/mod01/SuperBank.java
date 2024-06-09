@@ -1,4 +1,4 @@
-package bankMod01;
+package mod01;
 
 public class SuperBank {
 
@@ -15,7 +15,7 @@ public class SuperBank {
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
-    public String getFirstName() {
+    public String getFirstName(String firstName) {
         return firstName;
     }
 
@@ -24,7 +24,7 @@ public class SuperBank {
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
-    public String getLastName() {
+    public String getLastName(String lastName) {
         return lastName;
     }
 
@@ -37,23 +37,22 @@ public class SuperBank {
         return accountID;
     }
 
-     @Override
      public void deposit(double inputAmount){
         this.balance = this.balance + inputAmount; /* add here */
      }
-
-    public Double getBalance() {
-        return balance;
-    }
 
     public void withdraw(double inputAmount){
         this.balance = this.balance - inputAmount; /* subtract here */
     }
 
+    public Double getBalance() {
+        return this.balance;
+    }
+
     public void accountSummary(){
-        System.out.printf("Test" + firstName);
-        System.out.printf("Test" + firstName);
-        System.out.printf("Test" + accountID);
-        System.out.printf("Test" + balance);
+        System.out.printf("Test" + this.firstName);
+        System.out.printf("Test" + this.lastName);
+        System.out.printf("Test" + this.accountID);
+        System.out.printf("Test" + this.balance);
     }
 }

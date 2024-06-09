@@ -1,8 +1,8 @@
-package bankMod01;
+package mod01;
 
 class TestBank {
     public static void main(String[] args) {
-        System.out.print("default");
+        System.out.println("default");
         CheckBank checkBank = new CheckBank("5");
 
         /* setup accounts and summary */
@@ -20,11 +20,6 @@ class TestBank {
         checkBank.processWithdrawal(250);
         checkBank.processWithdrawal(500);
         checkBank.displayAccount();
-
-        //System.out.println("Test" + setAccountID);
-        //System.out.println("Test" + setFirstName);
-        //System.out.println("Test" + setLastName);
-        //System.out.println("Test" + accountSummary);
 
     }
 }

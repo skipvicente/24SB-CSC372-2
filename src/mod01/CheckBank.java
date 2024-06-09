@@ -1,4 +1,4 @@
-package bankMod01;
+package mod01;
 
 public class CheckBank extends SuperBank{
     private  String interestRateAttribute;
@@ -8,9 +8,9 @@ public class CheckBank extends SuperBank{
         this.interestRateAttribute = InputInterestRate + "%" ;
     }
 
-     public void processWithdrawl(double withDrawAmount){
+     public void processWithdrawal(double withDrawAmount){
         super.withdraw(withDrawAmount + 30);
-        System.out.println("Balance after withdraw: " + getBalance());
+        System.out.println("Balance after withdraw: " + this.getBalance());
      }
 
      public void displayAccount(){
