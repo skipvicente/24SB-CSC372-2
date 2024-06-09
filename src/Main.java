@@ -16,6 +16,15 @@ class TestBank {
         System.out.printf("Test" + setLastName);
         System.out.printf("Test" + accountSummary);
 
+        /* test case how to withdraw money */
+        checkBank.deposit(999);
+        checkBank.processWithdrawal(25);
+        checkBank.processWithdrawal(100);
+        checkBank.processWithdrawal(250);
+        checkBank.processWithdrawal(500);
+        checkBank.displayAccountr();
+
+
 
 
     }
