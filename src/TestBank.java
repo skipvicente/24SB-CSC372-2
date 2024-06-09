@@ -1,4 +1,4 @@
-package BankMod01
+package bankMod01;
 
 class TestBank {
     public static void main(String[] args) {
@@ -21,10 +21,10 @@ class TestBank {
         checkBank.processWithdrawal(500);
         checkBank.displayAccount();
 
-        System.out.println("Test" + setAccountID);
-        System.out.println("Test" + setFirstName);
-        System.out.println("Test" + setLastName);
-        System.out.println("Test" + accountSummary);
+        //System.out.println("Test" + setAccountID);
+        //System.out.println("Test" + setFirstName);
+        //System.out.println("Test" + setLastName);
+        //System.out.println("Test" + accountSummary);
 
     }
 }

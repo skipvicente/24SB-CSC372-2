@@ -1,11 +1,11 @@
-package BankMod01
+package bankMod01;
 
 public class SuperBank {
 
-    String firstName;
-    String lastName;
-    Integer accountID;
-    Double balance;
+    private String firstName;
+    private String lastName;
+    private Integer accountID;
+    private Double balance;
 
     public SuperBank(){
         this.balance = 0.0;
