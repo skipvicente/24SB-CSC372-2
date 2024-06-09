@@ -18,9 +18,15 @@ public class SortingByStudent {
                 if (i != minIndex) {
                     GenerateStudent temp = inputStudentList.get(i);
                     inputStudentList.set(i, inputStudentList.get(minIndex));
+                    inputStudentList.set(minIndex, temp);
                 }
-
             }
         }
+
+        this.studentNameOrder = inputStudentList;
+    }
+
+    public ArrayList<GenerateStudent> getNameSorted(){
+        return this.studentNameOrder;
     }
 }
