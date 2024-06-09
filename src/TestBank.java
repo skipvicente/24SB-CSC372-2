@@ -11,10 +11,7 @@ class TestBank {
         checkBank.setLastName("Doe");
         checkBank.accountSummary();
 
-        System.out.printf("Test" + setAccountID);
-        System.out.printf("Test" + setFirstName);
-        System.out.printf("Test" + setLastName);
-        System.out.printf("Test" + accountSummary);
+
 
         /* test case how to withdraw money */
         checkBank.deposit(999);
@@ -22,10 +19,12 @@ class TestBank {
         checkBank.processWithdrawal(100);
         checkBank.processWithdrawal(250);
         checkBank.processWithdrawal(500);
-        checkBank.displayAccountr();
+        checkBank.displayAccount();
 
-
-
+        System.out.printf("Test" + setAccountID);
+        System.out.printf("Test" + setFirstName);
+        System.out.printf("Test" + setLastName);
+        System.out.printf("Test" + accountSummary);
 
     }
 }
