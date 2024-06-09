@@ -21,10 +21,10 @@ class TestBank {
         checkBank.processWithdrawal(500);
         checkBank.displayAccount();
 
-        System.out.printf("Test" + setAccountID);
-        System.out.printf("Test" + setFirstName);
-        System.out.printf("Test" + setLastName);
-        System.out.printf("Test" + accountSummary);
+        System.out.println("Test" + setAccountID);
+        System.out.println("Test" + setFirstName);
+        System.out.println("Test" + setLastName);
+        System.out.println("Test" + accountSummary);
 
     }
 }
